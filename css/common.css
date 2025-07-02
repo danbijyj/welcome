@@ -1,0 +1,240 @@
+#wrap {
+    min-width: 1398px;
+}
+#wrap,
+#header,
+#mainVisual,
+#container,
+#footer {
+    width: 100%;
+}
+
+.inner {
+    width: 1398px;
+    margin: 0 auto 100px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+#header {
+    background: #fff;
+    width: 100%;
+}
+#header.on {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #fff;
+    border-bottom: 1px solid #ebebeb;
+    width: 100%;
+    height: 101px;
+    z-index: 1000;
+}
+#header .inner {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
+}
+#header h1 {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#header h1 a {
+}
+#header h1 a img {
+    width: 184px;
+}
+#header .nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    height: 100px;
+    overflow: hidden;
+    transition: 0.3s linear;
+    z-index: 200;
+}
+#header .nav.on {
+    height: 380px;
+}
+#header .nav .gnb {
+    display: flex;
+}
+#header .nav .gnb > li {
+}
+#header .nav .gnb > li > a {
+    width: 160px;
+    height: 100px;
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+#header .nav .gnb > li > a:hover {
+    color: #bd1d00;
+}
+#header .nav .gnb > li > ul {
+    padding-top: 30px;
+}
+#header .nav .gnb > li > ul li {
+}
+#header .nav .gnb > li > ul li a {
+    color: #444;
+    font-size: 16px;
+    line-height: 2.5;
+    display: block;
+}
+#header .nav .gnb > li > ul li a:hover {
+    color: #f75235;
+}
+#header .nav-bg {
+    width: 100%;
+    height: 0;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    z-index: 100;
+    transition: 0.3s linear;
+    border-radius: 0 0 0 30px;
+    overflow: hidden;
+    border-top: 1px solid transparent;
+    background: #fff;
+}
+#header .nav-bg.on {
+    height: 280px;
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+}
+#header .nav-bg img {
+    border-radius: 0 0 0 30px;
+    margin-top: 40px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+#header .util {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#header .util ul {
+    display: flex;
+    align-items: center;
+}
+#header .util ul li {
+}
+#header .util ul li a {
+    display: block;
+    margin-left: 25px;
+}
+#header .util ul li a i {
+    font-size: 22px;
+    color: #999;
+    padding-top: 5px;
+}
+#header .util ul li a i:hover {
+    color: #333;
+    transition: 0.3s;
+}
+#header .util ul li:first-child a {
+    background: #bd1d00;
+    color: #fff;
+    padding: 3px 30px;
+    border-radius: 20px;
+    border: 1px solid #bd1d00;
+}
+#header .util ul li:first-child a:hover {
+    background: #fff;
+    border: 1px solid #bd1d00;
+    color: #bd1d00;
+    transition: 0.2s;
+}
+
+#footer {
+    background: #333;
+    color: #bbb;
+    font-weight: 200;
+    font-size: 14px;
+}
+#footer .footer-1 {
+    width: 100%;
+    border-bottom: 1px solid #666;
+    padding: 50px 0 30px;
+    box-sizing: border-box;
+}
+#footer .footer-1 .inner,
+#footer .footer-2 .inner {
+    margin-bottom: 0;
+}
+#footer .footer-1 .inner {
+    position: relative;
+}
+#footer .footer-1 .footer-logo img {
+    margin-bottom: 30px;
+}
+#footer .footer-1 .footer-info {
+}
+#footer .footer-1 .footer-info p {
+}
+#footer .footer-1 .footer-info p span {
+    margin-right: 30px;
+    position: relative;
+}
+#footer .footer-1 .footer-info p span::after {
+    position: absolute;
+    content: '';
+    right: -15px;
+    top: 1px;
+    width: 1px;
+    height: 14px;
+    background: #666;
+}
+#footer .footer-1 .footer-info p span b {
+    font-weight: 500;
+    margin-right: 7px;
+    color: #ebebeb;
+}
+#footer .footer-1 .sns {
+    position: absolute;
+    bottom: 2px;
+    right: 0;
+}
+#footer .footer-1 .sns ul {
+    display: flex;
+}
+#footer .footer-1 .sns ul li {
+    margin-left: 15px;
+    opacity: 0.5;
+}
+#footer .footer-1 .sns ul li:hover {
+    opacity: 1;
+    transition: 0.3s;
+}
+#footer .footer-1 .sns ul li a {
+}
+#footer .footer-1 .sns ul li a img {
+}
+#footer .footer-2 {
+    padding: 30px 0 50px;
+    box-sizing: border-box;
+}
+
+.top {
+    position: fixed;
+    right: 9%;
+    bottom: 135px;
+    opacity: 0.5;
+    display: none;
+}
+.top.on {
+    display: block;
+}
+.top a {
+}
+.top a img {
+}
