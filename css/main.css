@@ -1,0 +1,565 @@
+#mainVisual {
+  width: 100%;
+  height: 750px;
+  position: relative;
+}
+#mainVisual .mainBanner {
+  width: 100%;
+  height: 750px;
+  position: relative;
+  overflow: hidden;
+}
+#mainVisual .mainBanner li {
+  width: 100%;
+  height: 750px;
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+  transition: 0.3s linear;
+}
+#mainVisual .mainBanner li:nth-child(1) {
+  left: 0;
+  background-image: url(../images/visual_00.png);
+}
+#mainVisual .mainBanner li:nth-child(2) {
+  background-image: url(../images/visual_01.png);
+}
+#mainVisual .mainBanner li:nth-child(3) {
+  background-image: url(../images/visual_02.png);
+}
+#mainVisual .mainBanner li .inner {
+  width: 1398px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#mainVisual .mainBanner li h2 {
+  font-size: 22px;
+  font-family: 'OTWelcomeRA';
+  padding: 220px 0 80px;
+  box-sizing: border-box;
+}
+#mainVisual .mainBanner li h2 > span {
+  color: #f75235;
+}
+#mainVisual .mainBanner li p {
+}
+#mainVisual .mainBanner li p:nth-of-type(1) {
+  font-size: 50px;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+#mainVisual .mainBanner li p:nth-of-type(2) {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 0.6;
+}
+#mainVisual .mainBanner li p span {
+  color: #bd1d00;
+}
+#mainVisual .btn-wrap {
+}
+#mainVisual .btn-wrap .btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  color: #fff;
+  opacity: 0.8;
+  z-index: 50;
+}
+#mainVisual .btn-wrap .prev {
+  left: 200px;
+}
+#mainVisual .btn-wrap .next {
+  right: 200px;
+}
+#mainVisual .page {
+  position: absolute;
+  bottom: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 20px;
+  z-index: 30;
+}
+#mainVisual .page button {
+  width: 50px;
+  height: 5px;
+  border-radius: 3px;
+  background: #fff;
+  opacity: 0.5;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#mainVisual .page button.on {
+  background: #f75235;
+  opacity: 1;
+}
+
+/* main 공통 */
+.main {
+}
+.main h2 {
+  font-size: 40px;
+  margin: 100px auto 40px;
+  font-family: 'OTWelcomeRA';
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+}
+.main .more {
+  border: 1px solid #bbb;
+  display: inline-block;
+  color: #666;
+  font-size: 12px;
+  padding: 5px 18px;
+  border-radius: 15px;
+}
+.main .more:hover {
+  border: 1px solid #bd1d00;
+  color: #bd1d00;
+  transition: ease 0.5s;
+}
+
+/* con1 */
+.main .con1 {
+  margin-bottom: 100px;
+}
+.main .con1 .work-box {
+  height: 450px;
+  display: flex;
+  gap: 30px;
+}
+.main .con1 .work-box .work {
+  flex: 1;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  transition: flex 0.5s;
+  overflow: hidden;
+  border-radius: 0 0 0 30px;
+  filter: brightness(130%);
+}
+.main .con1 .work-box .work:hover {
+  flex: 3;
+  background-position: center;
+  filter: brightness(100%);
+}
+.main .con1 .work-box .work1 {
+  background-image: url(../images/con1_00_on.png);
+  background-position: -200px center;
+}
+.main .con1 .work-box .work2 {
+  background-image: url(../images/con1_01_on.png);
+}
+.main .con1 .work-box .work3 {
+  background-image: url(../images/con1_02_on.png);
+  background-position: -230px center;
+}
+.main .con1 .work-box .work4 {
+  background-image: url(../images/con1_03_on.png);
+  background-position: -230px center;
+}
+.main .con1 .work-box .work5 {
+  background-image: url(../images/con1_04_on.png);
+}
+.main .con1 .work-box .work .work-txt {
+  position: relative;
+  color: #fff;
+  width: 85%;
+  height: 450px;
+  margin: auto;
+}
+.main .con1 .work-box .work .work-txt h3 {
+  font-family: 'OTWelcomeRA';
+  text-align: center;
+  font-size: 24px;
+  position: absolute;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+.main .con1 .work-box .work:hover .work-txt h3 {
+  opacity: 1;
+  top: 60px;
+  text-align: left;
+}
+.main .con1 .work-box .work .work-txt .work-txt-in {
+  position: absolute;
+  bottom: 35px;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: 0.4s;
+  width: 450px;
+  left: 50%;
+  transform: translate(-50%, 20px);
+  text-align: left;
+}
+.main .con1 .work-box .work:hover .work-txt .work-txt-in {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+.main .con1 .work-box .work .work-txt .work-txt-in p {
+  font-weight: 200;
+  word-break: keep-all;
+}
+.main .con1 .work-box .work .work-txt .work-txt-in span {
+  cursor: pointer;
+  border: 1px solid #fff;
+  padding: 10px 50px 10px 30px;
+  margin: 40px 10px 40px 0;
+  line-height: 3.5;
+  border-radius: 20px;
+  position: relative;
+}
+.main .con1 .work-box .work .work-txt .work-txt-in span::after {
+  content: '';
+  position: absolute;
+  right: 25px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 13px;
+  background-image: url(../images/con1_go.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* con2 */
+.main .con2 {
+  background-image: url(../images/con2_bg.png);
+  background-position: 0 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 560px;
+}
+.main .con2 .inner {
+  position: relative;
+}
+.main .con2 .dona1 {
+}
+.main .con2 .dona1 h3 {
+  text-align: center;
+  font-size: 30px;
+  font-family: 'OTWelcomeRA';
+  font-weight: bold;
+  padding: 80px 0 40px;
+  box-sizing: border-box;
+}
+.main .con2 .dona1 ul {
+  display: flex;
+  justify-content: space-between;
+}
+.main .con2 .dona1 ul li {
+  text-align: center;
+  color: #fff;
+  border: 1px solid #fff;
+  width: 280px;
+  height: 190px;
+  border-radius: 95px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main .con2 .dona1 ul li i {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+}
+.main .con2 .dona1 ul li strong {
+  font-size: 40px;
+  color: #bd1d00;
+}
+.main .con2 .dona1 ul li p {
+  font-size: 20px;
+}
+.main .con2 .dona2 {
+  background: #f2f2f2;
+  padding: 40px 0;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: -260px;
+  width: 1398px;
+  text-align: center;
+}
+.main .con2 .dona2 strong {
+  font-size: 20px;
+  font-family: 'OTWelcomeRA';
+}
+.main .con2 .dona2 ul {
+  display: flex;
+  justify-content: center;
+  gap: 170px;
+  margin-top: 30px;
+}
+.main .con2 .dona2 ul li {
+  display: flex;
+}
+.main .con2 .dona2 ul li i {
+  font-size: 42px;
+  color: #555;
+  margin-right: 10px;
+}
+.main .con2 .dona2 ul li p {
+  text-align: left;
+  color: #666;
+  line-height: 1.4;
+}
+
+/* con3 */
+.con3 {
+}
+.con3 .inner {
+  margin-bottom: 0;
+}
+.con3 h2 {
+  margin-top: 150px;
+}
+.con3 .more {
+  position: absolute;
+  right: 0;
+  top: 3px;
+}
+.con3 ul {
+  display: flex;
+  justify-content: space-between;
+}
+.con3 ul > li {
+  width: 327px;
+}
+.con3 ul > li ul {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #333;
+}
+.con3 ul > li ul:hover {
+  border-top: 1px solid #bd1d00;
+}
+.con3 ul > li ul li {
+  word-break: keep-all;
+  line-height: 1.2;
+}
+.con3 ul > li ul li:nth-child(1) {
+  height: 42px;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 30px 0 20px;
+}
+.con3 ul > li ul li:nth-child(2) {
+  color: #999;
+  margin-bottom: 20px;
+}
+.con3 ul > li ul li:nth-child(3) {
+  width: 327px;
+  height: 250px;
+  overflow: hidden;
+}
+.con3 ul > li ul li img {
+  transition: 0.5s;
+}
+.con3 ul > li ul:hover img {
+  transform: scale(1.1);
+}
+
+/* con4 */
+.con4 .inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+.con4 h2 {
+  text-align: left;
+}
+.con4 .notice {
+  position: relative;
+  width: 813px;
+}
+.con4 .notice h2 {
+}
+.con4 .notice ul {
+  border-top: 3px solid #333;
+}
+.con4 .notice ul > li {
+  border-bottom: 1px solid #999;
+  width: 100%;
+  padding: 13px 0;
+}
+.con4 .notice ul > li:hover {
+  background: #f2f2f2;
+}
+.con4 .notice ul > li ul {
+  display: flex;
+  border-top: none;
+}
+.con4 .notice ul > li ul li {
+  border-bottom: 0;
+}
+.con4 .notice ul > li ul li:nth-child(1) {
+  width: 25%;
+}
+.con4 .notice ul > li ul li:nth-child(1) span {
+  color: #fff;
+  background: #bd1d00;
+  padding: 8px 18px;
+  box-sizing: border-box;
+  border-radius: 18px;
+  margin-left: 25px;
+}
+.con4 .notice ul > li ul li:nth-child(2) a {
+  display: block;
+}
+.con4 .notice ul > li ul li:nth-child(3) {
+  color: #999;
+  width: 25%;
+}
+.con4 .more {
+  position: absolute;
+  right: 0;
+  top: 103px;
+}
+.con4 .more:hover {
+  border: 1px solid #bd1d00;
+  color: #bd1d00;
+  transition: ease 0.5s;
+}
+.con4 .video {
+  width: 535px;
+  position: relative;
+}
+.con4 .video h2 {
+}
+.con4 .video ul {
+  border-top: 3px solid #333;
+  border-bottom: 1px solid #999;
+}
+.con4 .video ul li {
+}
+.con4 .video ul li iframe {
+  margin: 10px 0;
+}
+.con4 .video ul li:nth-child(2) {
+  font-size: 18px;
+  font-weight: 600;
+}
+.con4 .video ul li:nth-child(3) {
+  color: #999;
+  margin-bottom: 10px;
+}
+
+/* con5 */
+.con5 {
+  background-image: url(../images/con5_bg.png);
+  height: 950px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.con5 .inner {
+  margin-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.con5 .spon-l {
+  margin-right: 90px;
+  margin-top: 160px;
+}
+.con5 .spon-l p:nth-child(1) {
+  font-family: 'OTWelcomeRA';
+  font-weight: bold;
+  font-size: 40px;
+}
+.con5 .spon-l p:nth-child(2) {
+  font-family: 'OTWelcomeRA';
+  font-weight: bold;
+  font-size: 48px;
+}
+.con5 .spon-l p:nth-child(3) {
+  word-break: keep-all;
+  width: 420px;
+}
+.con5 .spon-r {
+  margin-top: 100px;
+}
+.con5 .spon-r ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px;
+}
+.con5 .spon-r ul li {
+  padding: 40px;
+  box-sizing: border-box;
+  background: #fff;
+  border-radius: 0 0 0 30px;
+  cursor: pointer;
+  width: 420px;
+  height: 350px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: 40px 210px;
+}
+.con5 .spon-r ul li:hover {
+  background: #f75235;
+  background-repeat: no-repeat;
+  background-position: 40px 210px;
+  transition: ease 0.3s;
+}
+.con5 .spon-r ul li strong {
+  font-size: 24px;
+  font-weight: 700;
+  color: #bd1d00;
+  margin-bottom: 25px;
+  display: block;
+}
+.con5 .spon-r ul li p {
+  font-size: 18px;
+  word-break: keep-all;
+  line-height: 1.4;
+}
+.con5 .spon-r ul li i {
+  font-size: 30px;
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+}
+.con5 .spon-r ul li:hover strong,
+.con5 .spon-r ul li:hover p,
+.con5 .spon-r ul li:hover i {
+  color: #fff;
+}
+
+.con5 .spon-r ul li:nth-child(1) {
+  background-image: url(../images/con5_00.png);
+}
+.con5 .spon-r ul li:nth-child(2) {
+  background-image: url(../images/con5_01.png);
+}
+.con5 .spon-r ul li:nth-child(3) {
+  background-image: url(../images/con5_02.png);
+}
+.con5 .spon-r ul li:nth-child(4) {
+  background-image: url(../images/con5_03.png);
+}
+.con5 .spon-r ul li:hover:nth-child(1) {
+  background-image: url(../images/con5_00_on.png);
+}
+.con5 .spon-r ul li:hover:nth-child(2) {
+  background-image: url(../images/con5_01_on.png);
+}
+.con5 .spon-r ul li:hover:nth-child(3) {
+  background-image: url(../images/con5_02_on.png);
+}
+.con5 .spon-r ul li:hover:nth-child(4) {
+  background-image: url(../images/con5_03_on.png);
+}

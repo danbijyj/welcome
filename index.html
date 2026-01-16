@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="description"
+            content="미니프로젝트 - 웰컴복지재단 공식 홈페이지"
+        />
+        <meta name="keywords" content="웹퍼블리셔,프론트엔드" />
+        <meta name="author" content="장유정" />
+
+        <meta property="og:url" content="사이트url" />
+        <meta property="og:title" content="웰컴복지재단 리디자인,코딩" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="썸네일이미지경로" />
+        <meta
+            property="og:description"
+            content="웰컴복지재단 리디자인, 사이트 마크업, 스타일, 자바스크립트"
+        />
+
+        <title>웰컴복지재단</title>
+
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/common.css" />
+        <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="css/ani.css" />
+        <link
+            href="https://cdn.boxicons.com/fonts/basic/boxicons.min.css"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://webfontworld.github.io/pretendard/Pretendard.css"
+        />
+    </head>
+    <body>
+        <p id="skipNav"><a href="#content">본문바로가기</a></p>
+        <div id="wrap">
+            <header id="header">
+                <div class="inner">
+                    <h1>
+                        <a href=""
+                            ><img
+                                src="./images/logo.png"
+                                alt="웰컴복지재단 로고"
+                        /></a>
+                    </h1>
+                    <nav class="nav">
+                        <ul class="gnb">
+                            <li>
+                                <a href="#">재단소개</a>
+                                <ul>
+                                    <li><a href="">인사말</a></li>
+                                    <li><a href="">웰컴금융그룹</a></li>
+                                    <li><a href="">소개</a></li>
+                                    <li><a href="">오시는길</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">사업소개</a>
+                                <ul>
+                                    <li><a href="">아동복지사업</a></li>
+                                    <li><a href="">청소년복지사업</a></li>
+                                    <li><a href="">노인복지사업</a></li>
+                                    <li><a href="">장애인복지사업</a></li>
+                                    <li><a href="">사회봉사사업</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">재단소식</a>
+                                <ul>
+                                    <li><a href="">공지사항</a></li>
+                                    <li><a href="">웰컴뉴스</a></li>
+                                    <li><a href="">공시사항</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">후원</a>
+                                <ul>
+                                    <li><a href="">후원안내</a></li>
+                                    <li><a href="">기금후원</a></li>
+                                    <li><a href="">꿈·희망·빛 펀딩</a></li>
+                                    <li><a href="">물품후원</a></li>
+                                    <li><a href="">기업사회공헌</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <!-- //gnb -->
+                    </nav>
+                    <div class="util">
+                        <ul>
+                            <li>
+                                <a href="#">후원하기</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="bx bx-globe-alt"></i> </a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    ><i class="bx bx-search-big"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="bx bx-menu-wide"></i> </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- //util -->
+                </div>
+                <div class="nav-bg">
+                    <div class="inner">
+                        <img src="./images/gnb_on.png" alt="" />
+                    </div>
+                </div>
+            </header>
+            <!-- //header -->
+            <section id="mainVisual">
+                <ul class="mainBanner">
+                    <li class="on">
+                        <div class="inner">
+                            <h2>모두가 누리는<span> THE</span> 나은 행복</h2>
+                            <p>미래를 꿈꾸는 모두에게</p>
+                            <p><span>THE</span> 나은 미래</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inner">
+                            <h2>모두가 누리는<span> THE</span> 나은 행복</h2>
+                            <p>변화를 꿈꾸는 모두에게</p>
+                            <p><span>THE</span> 나은 삶</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inner">
+                            <h2>모두가 누리는<span> THE</span> 나은 행복</h2>
+                            <p>지역사회 모두가 누리는</p>
+                            <p><span>THE</span> 나은 복지</p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="btn-wrap">
+                    <button class="btn prev">
+                        <img src="./images/visual_prev.png" alt="" />
+                    </button>
+                    <button class="btn next">
+                        <img src="./images/visual_next.png" alt="" />
+                    </button>
+                </div>
+                <div class="page"></div>
+            </section>
+            <!-- //mainVisual -->
+            <main id="container" class="main">
+                <section id="content">
+                    <div class="con con1">
+                        <div class="inner">
+                            <h2>웰컴복지사업</h2>
+                            <div class="work-box">
+                                <div class="work work1">
+                                    <div class="work-txt">
+                                        <h3>아동복지사업</h3>
+                                        <div class="work-txt-in">
+                                            <p>
+                                                지역아동센터의 원활한 운영을
+                                                위해 재단의 예산을 지원하여
+                                                건강한 사회 구성원으로
+                                                육성합니다.
+                                            </p>
+                                            <span>지역아동센터사업</span>
+                                            <span>우리동네키움센터사업</span>
+                                            <span>어린이집사업</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="work work2">
+                                    <div class="work-txt">
+                                        <h3>청소년복지사업</h3>
+                                        <div class="work-txt-in">
+                                            <p>
+                                                청소년들이 올바른 가치관을
+                                                형성하고 꿈과 비전을 통해
+                                                스스로의 삶을 개척할 수 있도록
+                                                위기청소년과 기관을 지원합니다.
+                                            </p>
+                                            <span>청소년복지시설사업</span>
+                                            <span>웰컴투모로우사업</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="work work3">
+                                    <div class="work-txt">
+                                        <h3>노인복지사업</h3>
+                                        <div class="work-txt-in">
+                                            <p>
+                                                지역 내 저소득 독거노인 및
+                                                취약계층 가정의 개인위생 등
+                                                환경개선을 위해 이동식 세탁
+                                                차량으로 대형 빨래 세탁과 청소
+                                                등을 지원합니다.
+                                            </p>
+                                            <span>행복빨래방사업</span>
+                                            <span> 주거환경개선사업</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="work work4">
+                                    <div class="work-txt">
+                                        <h3>장애인복지사업</h3>
+                                        <div class="work-txt-in">
+                                            <p>
+                                                장애인이 거주하는 시설의 운영과
+                                                환경개선을 지원하여 복지
+                                                사각지대를 줄이고 건강한 사회
+                                                구성원으로 역할을 감당하게
+                                                합니다.
+                                            </p>
+                                            <span>더보기</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="work work5">
+                                    <div class="work-txt">
+                                        <h3>사회봉사사업</h3>
+                                        <div class="work-txt-in">
+                                            <p>
+                                                우리나라가 지속 가능한 발전의
+                                                사회가 될 수 있도록 사회봉사
+                                                컨텐츠를 개발하고 실행합니다.
+                                            </p>
+                                            <span>더보기</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- con1 -->
+                    <div class="con con2">
+                        <div class="inner">
+                            <div class="dona1">
+                                <h3>
+                                    후원자님 덕분에 얼마나 도움을 받고 있을까요?
+                                </h3>
+                                <ul>
+                                    <li>
+                                        <i class="bx bx-people-diversity"></i>
+                                        <strong data-num="5521">0</strong>
+                                        <p>클라이언트</p>
+                                    </li>
+                                    <li>
+                                        <i class="bx bx-washer"></i>
+                                        <strong data-num="132">0</strong>
+                                        <p>빨래방</p>
+                                    </li>
+                                    <li>
+                                        <i class="bx bx-bowl-noodles-alt"></i>
+                                        <strong data-num="450">0</strong>
+                                        <p>푸드뱅크</p>
+                                    </li>
+                                    <li>
+                                        <i class="bx bx-book"></i
+                                        ><strong data-num="265">0</strong>
+                                        <p>도서관</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="dona2">
+                                <strong
+                                    >웰컴복지재단은 소외된 이웃을 위한 전문
+                                    기관으로 ‘기부금품의 모집 및 사용에 관한
+                                    법률’에 따라 엄격하게 후원금을
+                                    관리합니다.</strong
+                                >
+                                <ul>
+                                    <li>
+                                        <i class="bx bx-medal-star"></i>
+                                        <p>
+                                            한국가이드스타<br />투명성 최고등급
+                                            획득
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <i class="bx bx-trophy-star"></i>
+                                        <p>
+                                            투명경영대상<br />장애인부문 대상
+                                            수상
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <i class="bx bx-medal-star-alt"></i>
+                                        <p>투명경영대상<br />종합 대상 수상</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- con2 -->
+                    <div class="con con3">
+                        <div class="inner">
+                            <h2>웰컴뉴스</h2>
+                            <p><a href="#" class="more">View More</a></p>
+                            <ul>
+                                <li>
+                                    <ul>
+                                        <li>
+                                            웰컴복지재단, PC 기부로 아동·청소년
+                                            디지털 학습환경 개선 지원
+                                        </li>
+                                        <li>2025.06.20</li>
+                                        <li>
+                                            <img
+                                                src="./images/con3_00.png"
+                                                alt=""
+                                            />
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li>
+                                            새길 어린이집 어린이날 행사를
+                                            다녀왔어요
+                                        </li>
+                                        <li>2025.06.15</li>
+                                        <li>
+                                            <img
+                                                src="./images/con3_01.png"
+                                                alt=""
+                                            />
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li>
+                                            용문동주민센터와 함께하는 행복
+                                            빨래방 운영
+                                        </li>
+                                        <li>2025.06.08</li>
+                                        <li>
+                                            <img
+                                                src="./images/con3_02.png"
+                                                alt=""
+                                            />
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li>
+                                            이천시-웰컴복지재단 24시간 아이
+                                            돌봄센터 운영 위수탁협약 체결
+                                        </li>
+                                        <li>2025.05.20</li>
+                                        <li>
+                                            <img
+                                                src="./images/con3_03.png"
+                                                alt=""
+                                            />
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- con3 -->
+                    <div class="con con4">
+                        <div class="inner">
+                            <div class="notice">
+                                <h2>공지사항</h2>
+                                <p><a href="#" class="more">View More</a></p>
+                                <ul>
+                                    <li>
+                                        <ul>
+                                            <li><span>채용</span></li>
+                                            <li>
+                                                <a href="#"
+                                                    >강동노인종합복지관 출산휴가
+                                                    및 육아휴직 대체
+                                                    사회복지사(계약직) 채용
+                                                    공고</a
+                                                >
+                                            </li>
+                                            <li>2025.06.27</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li><span>일반</span></li>
+                                            <li>
+                                                <a href="#"
+                                                    >이천시 24시간 아이돌봄센터
+                                                    '아이다봄' 1주년 부모교육
+                                                    특강</a
+                                                >
+                                            </li>
+                                            <li>2025.06.18</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li><span>공모</span></li>
+                                            <li>
+                                                <a href="#"
+                                                    >웰컴저축은행과 함께 하는
+                                                    ESG 공모 '쓰담챌린지'</a
+                                                >
+                                            </li>
+                                            <li>2025.06.03</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li><span>채용</span></li>
+                                            <li>
+                                                <a href="#"
+                                                    >2025년 제3차 직원채용
+                                                    서류심사 결과 공고</a
+                                                >
+                                            </li>
+                                            <li>2025.05.24</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li><span>일반</span></li>
+                                            <li>
+                                                <a href="#"
+                                                    >cj프레시웨이와 함께 하는
+                                                    '내가쉐프다'</a
+                                                >
+                                            </li>
+                                            <li>2025.05.13</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="video">
+                                <h2>영상뉴스</h2>
+                                <p><a href="#" class="more">View More</a></p>
+                                <ul>
+                                    <li>
+                                        <iframe
+                                            width="535"
+                                            height="299"
+                                            src="https://www.youtube.com/embed/Fq4xHY0NjCs"
+                                            title="웰컴복지재단 위탁운영시설 - 항동하랑어린이집을 소개합니다"
+                                            frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                            referrerpolicy="strict-origin-when-cross-origin"
+                                            allowfullscreen
+                                        ></iframe>
+                                    </li>
+                                    <li>항동 하랑 어린이집을 소개합니다.</li>
+                                    <li>2025.06.08</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- con4 -->
+                    <div class="con con5">
+                        <div class="inner">
+                            <div class="spon-l">
+                                <p>모두가 누리는</p>
+                                <p>The 나은 행복</p>
+                                <p>
+                                    웰컴복지재단은 경제적인 문제, 가정의 문제로
+                                    외롭고 사랑받지 못하는 아동·청소년들의
+                                    상처를 예방하고 치유하여 건강한 사회의
+                                    구성원으로 성장할 수 있도록 지원하기 위해
+                                    설립된 재단입니다.
+                                </p>
+                            </div>
+                            <div class="spon-r">
+                                <ul>
+                                    <li>
+                                        <strong>기금후원</strong>
+                                        <p>
+                                            경제적 지원, 운영 지원, 행사 지원 등
+                                            재단 사업의 안정적인 운영을 위한
+                                            후원
+                                        </p>
+                                        <i class="bx bx-plus"></i>
+                                    </li>
+                                    <li>
+                                        <strong>꿈·희망·빛 펀딩</strong>
+                                        <p>
+                                            아이들의 꿈이, 취약 가정의 희망이,
+                                            밝은 빛이 꺼지지 않게 펀딩 참여와
+                                            후원
+                                        </p>
+                                        <i class="bx bx-plus"></i>
+                                    </li>
+                                    <li>
+                                        <strong>물품후원</strong>
+                                        <p>
+                                            식품, 생필품, 도서, 의류 등 물품
+                                            후원
+                                        </p>
+                                        <i class="bx bx-plus"></i>
+                                    </li>
+                                    <li>
+                                        <strong>기업사회후원</strong>
+                                        <p>
+                                            지속적인 파트너쉽을 통해 가깝게
+                                            소통하고 함께 성장하는 사회공헌활동
+                                        </p>
+                                        <i class="bx bx-plus"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- con5 -->
+                </section>
+                <!-- //content -->
+            </main>
+            <!-- //container .main-->
+            <footer id="footer">
+                <div class="footer-1">
+                    <div class="inner">
+                        <div class="footer-logo">
+                            <img src="./images/logo_white.png" alt="" />
+                        </div>
+                        <div class="footer-info">
+                            <p>
+                                <span><b>이사장</b>고광태</span>
+                                <span><b>사업자등록번호</b>534-82-00421</span>
+                                <span
+                                    ><b>주소</b>서울시 용산구 한강대로52길 25-8
+                                    디비타워 401호</span
+                                >
+                            </p>
+                            <p>
+                                <span><b>대표번호</b>02-6956-2442</span>
+                                <span><b>팩스번호</b>02-6956-2447</span>
+                                <span
+                                    ><b>대표메일</b>welcomefare@gmail.com</span
+                                >
+                            </p>
+                        </div>
+                        <div class="sns">
+                            <ul>
+                                <li>
+                                    <a href=""
+                                        ><img src="./images/sns_00.png" alt=""
+                                    /></a>
+                                </li>
+                                <li>
+                                    <a href=""
+                                        ><img src="./images/sns_01.png" alt=""
+                                    /></a>
+                                </li>
+                                <li>
+                                    <a href=""
+                                        ><img src="./images/sns_02.png" alt=""
+                                    /></a>
+                                </li>
+                                <li>
+                                    <a href=""
+                                        ><img src="./images/sns_03.png" alt=""
+                                    /></a>
+                                </li>
+                                <li>
+                                    <a href=""
+                                        ><img src="./images/sns_04.png" alt=""
+                                    /></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-2">
+                    <div class="inner">
+                        <p>
+                            Copyright © Welcome Welfare Foundation. All rights
+                            reserved.
+                        </p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <p class="top">
+            <a href=""><img src="./images/top.png" alt="" /></a>
+        </p>
+        <script src="./js/common.js"></script>
+        <script src="./js/main.js"></script>
+    </body>
+</html>
